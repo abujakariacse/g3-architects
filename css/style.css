@@ -6,7 +6,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+    border: 2px solid red;
     
+}
+section{
+    margin-top: 40px;
 }
 /* Header Section */
 header{
@@ -33,7 +37,6 @@ header{
 
 /* Banner Section */
 .banner-container{
-    height: 100vh;
     width: 90%;
     text-align: center;
     margin: 0 auto;
@@ -53,15 +56,47 @@ header{
     width: 70%;
     margin: 10px auto;
 }
-.banner-container button{
+.banner-container button,.features button{
     padding: 15px;
     border-radius: 5px;
     background-color: #FF900E;
     color: white;
     border: none;
 }
+/* Feature Section */
+.feature-container{
+    margin: 40px 200px;
+    display: flex;
+    align-items: center;
+}
+.features{
+    width: 50%;
+}
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.img-container img{
+    width: 90%;
+}
+.features-heading{
+    font-size: 45px;
+    margin-bottom: 0;
+}
+.features-heading-first-slice{
+    color: #727272;
+}
+.features-heading-second-slice{
+    color: #FF900E;
+}
+.features p{
+    color: #727272;
+    width: 80%;
+}
 /* Media Queri for mobile device */
 @media screen and (max-width:576px){
+    /* Header Section */
     header{
         flex-direction: column;
     }
@@ -71,6 +106,7 @@ header{
     .nav-menu li{
         margin-right: 20px;
     }
+    /* Banner Section */
     .banner-container{
         width: 90%;
     }
@@ -85,5 +121,30 @@ header{
     }
     .banner-img{
         margin-top: 20px;
+    }
+
+    /* Feature Section */
+    .feature-container{
+        flex-direction: column;
+       text-align: center;
+        margin: 20px 0;
+    }
+    .features{
+        width: 100%;
+    }
+    .img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img-container img{
+        width: 70%;
+    }
+    .features-heading{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .features p{
+        margin-left: 15px;
+        color: #727272;
+        width: 90%;
     }
 }
