@@ -208,7 +208,8 @@ header {
 .sponsor-container {
     text-align: center;
 }
-.sponsor-container p{
+
+.sponsor-container p {
     width: 90%;
 }
 
@@ -223,8 +224,35 @@ header {
     filter: grayscale(100%);
     width: 70%;
 }
+
+/* Newsletter Section */
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newsletter {
+    background-color: #FF900E1A;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 5px;
+}
+
 /* Footer Section */
-footer{
+footer {
     background-color: #FFF4E7;
     margin: 0 auto;
     text-align: center;
@@ -338,9 +366,14 @@ footer{
     .sponsors {
         flex-direction: column;
     }
+    /* Newsletter Section */
+    .newsletter{
+        flex-direction: column;
+    }
+
     /* Footer Section */
-footer{
-    text-align: center;
-    width: 90%;
-}
+    footer {
+        text-align: center;
+        width: 90%;
+    }
 }
