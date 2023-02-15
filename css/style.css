@@ -1,6 +1,7 @@
 /* Google Font's */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
 
+
 body {
     margin: 0;
     padding: 0;
@@ -21,6 +22,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #FF900E1A;
 }
 
 .logo {
@@ -44,7 +46,8 @@ header {
 
 /* Banner Section */
 .banner-container {
-    width: 90%;
+    background-color: #FF900E1A;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
 }
@@ -59,11 +62,12 @@ header {
 
 .banner-container h3 {
     font-size: 64px;
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 60px;
 }
 
 .banner-container p {
-    width: 70%;
+    width: 60%;
     margin: 10px auto;
 }
 
@@ -77,6 +81,7 @@ header {
 }
 
 /* Feature Section */
+
 .feature-container {
     margin: 40px 200px;
     display: flex;
@@ -240,6 +245,7 @@ footer{
     }
 
     .logo {
+        font-size: 32px;
         margin-bottom: 0;
     }
 
@@ -249,17 +255,16 @@ footer{
 
     /* Banner Section */
     .banner-container {
-        width: 90%;
+        width: 100%;
     }
 
     .banner-container h3 {
-        margin-top: 10px;
         font-size: 32px;
     }
 
     .banner-container p {
         font-size: 14px;
-        width: 100%;
+        width: 90%;
         margin: 10px 10px;
     }
 
@@ -336,6 +341,6 @@ footer{
     /* Footer Section */
 footer{
     text-align: center;
-    width: 100%;
+    width: 90%;
 }
 }
