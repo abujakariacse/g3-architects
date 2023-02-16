@@ -376,18 +376,3 @@ footer {
         width: 90%;
     }
 }
-/* Desktop Responsive */
-@media screen and (min-width:992px){
-.middle-btn {
-    background-color: #FF900E;
-    padding: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 45px;
-    font-weight: 700;
-    color: white;
-    position: relative;
-    left: 50%;
-    bottom: 80px;
-}
-}
